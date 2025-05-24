@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form id="cadastro" onsubmit="event.preventDefault(); additem()">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+        <div>
+            <label for="quantidade">quantidade:</label>
+            <input type="number" id="quantidade" name="quantidade" required>
+        </div>
+        <div>
+            <label for="preco">preco:</label>
+            <input type="number" id="preco" name="preco" required>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+     <button id="btn" onclick="mostrarItems()">Mostar itens</button>
+    <div id="resultado"></div>
+</body>
+<script src="teste.js"></script>
+</html>
